@@ -1,105 +1,57 @@
-![Logo](https://user-images.githubusercontent.com/6104940/111038514-52a0f700-8421-11eb-824e-5f2d2d125005.png)
+# Modern ThreeJS ⚡️
 
-# Three.js TypeScript Webpack Starter
+> Modern ThreeJS boilerplate powered by Vite & Typescript.
 
-A starter project for using Three.js, TypeScript, SCSS and Webpack.
+![Modern ThreeJS](./public/modern-three.png)
+
+Live demo [here](https://modern-three.alvarosaburido.dev/)
 
 ## Features
-- Webpack 5 + HMR
-- TypeScript + Three.js
-- SCSS + Autoprefixing 
 
+- Powered with [Vite](https://vite.dev/) 📦
+- GUI controls using [Tweakpane](https://cocopon.github.io/tweakpane/) 🎛
+- Typescript 🦾
+- No classes, just functions 🎯
+- Shader support (glsl) with[vite-plugin-glsl](https://github.com/UstymUkhman/vite-plugin-glsl) 🎨
 
-## 🚀 Getting Started
+## You can help me keep working on this project 💚
 
-Get up and running with these simple steps:
+- [Become a Sponsor on GitHub](https://github.com/sponsors/alvarosabu)
+- [One-time donation via PayPal](https://paypal.me/alvarosaburido)
 
-1. Clone the project
-2. Run `npm install`
-3. Run `npm run dev`
+## Check it out
 
+You can create a repo with this template [here](https://github.com/alvarosabu/modern-three/generate)
 
-## Configuration
-Optional configuration for the project can be done in the following files below.
+Or if you prefer to do it manually with the cleaner git history
 
-Open [env.config.js](/env.config.js) and you will see the default configuration for the project.
-
-
-| Config      | Description |
-| ----------- | ----------- |
-| `.browerslistrc`      | Open [.browserslist](/.browserslist) to configure Browser support for TypeScript + SCSS compiliation. [Read more here about Browerslist](https://github.com/browserslist/browserslist). Defaults are set for last 2 versions, > 1% and IE 11.   |
-| `outputConfig.destPath` | The folder in which you want your app to compile to. By default this is `dist`.               |
-| `entryConfig` | Webpack Entry points, by default this will look for the TypeScript + SCSS entry point files.  More info on [Entry points here](https://webpack.js.org/concepts/entry-points/ )               |
-| `copyPluginPatterns.patterns` | Configure folders you want copied over when compiling your app. Useful to copy over entire folder structures of images or fonts. |
-| `devServer` | Configure the Webpack development server. Enable `https`, specify a particular `port`, or `host`. [More information on these options here](https://webpack.js.org/configuration/dev-server/)
-| `scssConfig.destFileName` | Specify the output for your css. E.g `css/app.css`
-| `terserPluginConfig` | Full [Terser config can be found here](https://webpack.js.org/plugins/terser-webpack-plugin/#terseroptions).
-
-
-## Images, Fonts and output 
-
-Here's an example of the default generated output to our `dist` folder.
-```
-- index.html
--- js
--- css
--- fonts
----- some-font-file.woff
--- images
----- path-to-example-image.jpg
+```bash
+npx degit alvarosabu/modern-three my-awesome-three
+cd my-awesome-three
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
-- By default, fonts and images are copied to the `dist` folder.
-- To include a reference to an image or font, it should be relative to where your css would output.
+### Project setup
 
-For example: 
-
-`stylesheets/some-folder/some-file-somewhere.scss`
-```css
-.example {
-    background-image: url("../images/path-to-image-example.jpg");
-}
-
-@font-face {
-    font-family: "Example-font";
-    src: url("../fonts/some-font-file.woff");
-}
-``` 
-
-Would output to the folder `css/app.css` 
+### Use it
 
 ```
-- index.html
--- js
--- css
----- app.css
--- fonts
----- some-font-file.woff
--- images
----- path-to-example-image.jpg
+pnpm dev
 ```
 
+This will serve the app at [http://localhost:3000](http://localhost:3000)
 
-## Development
+### Build it
 
-```shell
-npm install
-npm run dev
+```
+pnpm build
 ```
 
-## Production
-Note: This will compile to a `dist` folder.
-```shell
-npm run build
-```
+Builds the app for production to the `dist` folder.<br>
 
-### Build tools
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-* [Three.js](https://threejs.org/) - Three.js is a cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser using WebGL.
-* [TypeScript](https://www.typescriptlang.org) - TypeScript is a superset of JavaScript that compiles to clean JavaScript.
-* [Webpack 5](https://webpack.js.org/) - App bundler for JavaScript.
-* [SCSS](https://sass-lang.com/) - Preprocessor for SCSS to CSS.
+See the section about [deployment](#deployment) for more information.
 
-
-### 📝License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+![repository-banner.png](https://res.cloudinary.com/alvarosaburido/image/upload/v1612193118/as-portfolio/Repo_Banner_kexozw.png)
